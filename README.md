@@ -10,21 +10,21 @@ mainhunter_4 propose plusieurs options en ligne de commande pour effectuer diff�
 ## Analyse des ports
 Pour analyser les ports ouverts sur votre système, utilisez la commande suivante :
 
-> rootkit_hunter.py --analyse-ports
+> mainhunter.py --analyse-ports
 
 Cela effectuera une analyse de tous les ports ouverts sur votre machine et fournira un rapport sur les services suspects ou non autorisés en cours d'exécution.
 
 ## Analyse des fichiers importants
 mainhunter_4 vous permet de spécifier une liste de fichiers importants dans le fichier de configuration qui doivent être surveillés pour toute modification non autorisée. Pour lancer une analyse de ces fichiers, utilisez la commande suivante :
 
-> rootkit_hunter.py --analyse-fichiers
+> mainhunter.py --analyse-fichiers
 
 mainhunter_4 calculera les empreintes de fichiers des fichiers spécifiés et les comparera aux empreintes de fichiers stockées. Toute divergence sera signalée, indiquant des modifications potentielles des fichiers importants.
 
 ## Comparaison des empreintes de fichiers avec VirusTotal
 mainhunter_4 intègre le service VirusTotal pour comparer les empreintes de fichiers des fichiers système à la base de données VirusTotal, qui contient des informations sur les logiciels malveillants connus. Pour effectuer cette vérification, utilisez la commande suivante :
 
-> rootkit_hunter.py --verifier-virustotal
+> mainhunter.py --verifier-virustotal
 
 mainhunter_4 calculera les empreintes de fichiers des fichiers système et les comparera à la base de données VirusTotal. Si des fichiers sont identifiés comme malveillants, ils seront signalés comme des menaces potentielles pour la sécurité.
 
