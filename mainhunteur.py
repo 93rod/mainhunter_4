@@ -5,7 +5,7 @@ import calcul_hash
 import compare_hash
 import scan_ports
 
-# Appeler la fonction ou exécuter le code nécessaire dans conf_file.py
+# Appeler la fonction ou exécuter le code nécessaire dans conf_file
 conf_file.do()
 calcul_hash.cal()
 compare_hash.comp()
